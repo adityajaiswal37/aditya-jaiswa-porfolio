@@ -1,0 +1,13 @@
+<div class="main">
+    <div class="cards">
+        <div class="card" *ngFor="let education of educations">
+            <div class="section">
+                <div class="year">{{ education.year }}</div>
+                <div class="class">{{ education.class }}</div>
+                <div class="school">{{ education.school }}</div>
+                <div class="description">{{ education.description }}</div>
+            </div>
+            <img class="image" [src]="education.image">
+        </div>
+    </div>
+</div>
